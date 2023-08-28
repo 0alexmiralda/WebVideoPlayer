@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon" >
+</head>
+
+<body>
+    <h1 class="start">Video Player</h1>
+
+    <div class="wrapper">
+        <div class="player">
+            <div class="player_overlay">
+                <h2 class="player_tittle">Ergo Pro ft. Lou Fresco - STILL HUNGRY</h2>
+                <div class="player_actions">
+                    <button class="button" id="backward" title="Go back 10 seconds"
+                        aria-label="Go back 10 seconds"></button>
+                    <button class="button" id="play" title="Play video" aria-label="Play video"></button>
+                    <button class="button" id="pause" title="Pause video" aria-label="Pause video"></button>
+                    <button class="button" id="forward" title="Fast forward 10 seconds"
+                        aria-label="Fast forward 10 seconds"></button>
+                    <div class="player_progress">
+                        <input id="progress" type="range" value="0" min="0" max="100" step="1">
+                    </div>
+                </div>
+            </div>
+            
+            <video id="video" src="./videos/lilsupa.mp4" width="420" poster="./images/poster_final.JPG"></video>
+          
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
